@@ -1,0 +1,45 @@
+.tasksContainer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tasksAccountants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasksEmpty {
+    border-top: 1px solid var(--gray-400);
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-300);
+}
+
+.tasksArea {
+    border-top: 1px solid var(--gray-400);
+    height: 15.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-300);
+}
+
+.tasksAreaText {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .tasksAccountants {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,93 @@
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--gray-300);
+}
+
+.task + .task {
+    margin-top: 0.75rem;
+}
+
+.taskCheckbox {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    color: var(--gray-100);
+    line-height: 140%;
+    cursor: pointer;
+}
+
+.taskCheckbox input[type="checkbox"] {
+    display: none;
+}
+
+.taskCheckbox strong {
+    display: flex;
+    justify-content: center;
+    gap:  0.75rem;
+}
+
+.taskCheckbox strong span {
+    flex: 1;
+    color: var(--gray-100);
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.taskCheckbox strong:before {
+    width: 17.45px;
+    height: 17.45px;
+    border: 3px solid var(--blue-300);
+    content: "";
+    display: inline-block;
+    padding: 0.285px;
+    vertical-align: top;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskCheckbox:hover strong:before {
+    border: 3px solid var(--blue-500);
+    background: rgba(30, 111, 159, 0.2);
+}
+
+.taskCheckbox input[type="checkbox"]:checked + strong:before {
+    color: var(--gray-100);
+    background: var(--purple-500);
+    border: 3px solid var(--purple-500);
+    content: '\2714';
+}
+
+.taskCheckbox:hover input[type="checkbox"]:checked + strong:before {
+    background: var(--purple-300);
+    border: 3px solid var(--purple-300);
+}
+
+.taskCheckbox input[type="checkbox"]:checked + strong span {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.task > button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+    padding: 0.3rem;
+}
+
+.task > button:hover {
+    color: var(--red-500);
+    background: var(--gray-400);
+}

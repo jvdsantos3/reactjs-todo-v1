@@ -1,0 +1,28 @@
+.accountants {
+    height: 1.1875rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.accountants span {
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border: 0;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.accountantsBlue {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--blue-300);
+}
+
+.accountantsPurple {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--purple-300);
+}
+
