@@ -15,6 +15,10 @@
     margin-top: 0.75rem;
 }
 
+.task:last-child {
+    margin-bottom: 4rem;
+}
+
 .taskCheckbox {
     display: flex;
     align-items: flex-start;
