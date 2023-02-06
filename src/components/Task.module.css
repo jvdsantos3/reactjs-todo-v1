@@ -36,13 +36,14 @@
     display: flex;
     justify-content: center;
     gap:  0.75rem;
+    flex: 1;
 }
 
 .taskCheckbox strong span {
     flex: 1;
     color: var(--gray-100);
     font-weight: 500;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .taskCheckbox strong:before {
